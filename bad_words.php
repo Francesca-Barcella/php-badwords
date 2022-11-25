@@ -1,4 +1,6 @@
 <?php
+//var_dump($_GET);
+
 $paragrafo = $_GET['paragrafo'];
 $parola = $_GET['parola'];
 
@@ -13,7 +15,7 @@ $parola = $_GET['parola'];
     <title>bad_word</title>
 </head>
 <body>
-    <p>Il paragrafo che hai inserito è il segutente: <br> <strong><?php echo $paragrafo; ?></strong></p>
+    <p>Il paragrafo che hai inserito è lungo <strong> <?php echo strlen($paragrafo); ?> </strong> caratteri ed è il segutente: <br> <strong><?php echo $paragrafo; ?></strong></p>
     <span>La parola che hai inserito è la segutente: <br> <strong><?php echo $parola; ?></strong></span>
 </body>
 </html>
