@@ -12,7 +12,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<h1>funziono</h1>
-    
+    <h1>funziono</h1>
+    <div class="container">
+
+        <form action="bad_words.php" method="get">
+            <div class="mb-3">
+                <label for="paragrafo" class="form-label">Paragrafo:</label>
+                <small id="paragrafoHelper" class="text-muted">scrivi una frase qui sotto</small>
+                <input type="text" name="paragrafo" id="paragrafo" class="form-control" placeholder="Scrivi qui ..." aria-describedby="paragrafoHelper">
+            </div>
+            <div class="mb-3">
+                <label for="parola" class="form-label">Parola:</label>
+                <small id="parolaHelper" class="text-muted">scrivi una parola qui sotto</small>
+                <input type="text" name="parola" id="parola" class="form-control" placeholder="Scrivi qui ..." aria-describedby="parolaHelper">
+            </div>
+            <button type="submit" class="btn-primary">Invia</button>
+            <button type="reset" class="btn-danger">Cancella</button>
+        </form>
+    </div>
 </body>
 </html>
