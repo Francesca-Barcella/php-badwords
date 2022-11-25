@@ -1,8 +1,19 @@
 <?php
 //var_dump($_GET);
 
-$paragrafo = $_GET['paragrafo'];
+$frase = $_GET['frase'];
 $parola = $_GET['parola'];
+echo $frase .'<br>';
+echo $parola .'<br>';
+
+
+$frase_esplosa = explode (' ', $frase);
+var_dump($frase_esplosa) .'<br>';
+
+$parola_censurata = str_ireplace($parola, '***', $frase);
+var_dump($parola_censurata) .'<br>';
+//echo $parola_censurata
+
 
 ?>
 
@@ -15,7 +26,8 @@ $parola = $_GET['parola'];
     <title>bad_word</title>
 </head>
 <body>
-    <p>Il paragrafo che hai inserito è lungo <strong> <?php echo strlen($paragrafo); ?> </strong> caratteri ed è il segutente: <br> <strong><?php echo $paragrafo; ?></strong></p>
-    <span>La parola che hai inserito è la segutente: <br> <strong><?php echo $parola; ?></strong></span>
+    <p>La frase che hai inserito è lunga <strong> <?php echo strlen($frase); ?> </strong> caratteri ed è la segutente: <br> <strong><?php echo $frase; ?></strong></p>
+    <p>La parola che hai scelto di riscrivere è la segutente: <br> <strong><?php echo $parola; ?></strong></p>
+    <p>La nuova frase è quindi: <br> <strong><?php echo $parola_censurata  ?></strong></p>
 </body>
 </html>

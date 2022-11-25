@@ -16,13 +16,13 @@
         <h1>Bad word</h1>
             <form action="bad_words.php" method="get">
                 <div class="mb-3">
-                    <label for="paragrafo" class="form-label">Paragrafo:</label>
-                    <small id="paragrafoHelper" class="text-muted">scrivi una frase qui sotto</small>
-                    <input type="text" name="paragrafo" id="paragrafo" class="form-control" placeholder="Scrivi qui ..." aria-describedby="paragrafoHelper">
+                    <label for="frase" class="form-label">frase:</label>
+                    <small id="fraseHelper" class="text-muted">scrivi una frase qui sotto</small>
+                    <input type="text" name="frase" id="frase" class="form-control" placeholder="Scrivi qui ..." aria-describedby="paragrafoHelper">
                 </div>
                 <div class="mb-3">
                     <label for="parola" class="form-label">Parola:</label>
-                    <small id="parolaHelper" class="text-muted">scrivi una parola qui sotto</small>
+                    <small id="parolaHelper" class="text-muted">scegli una parola della tua frase e inseriscila qui sotto</small>
                     <input type="text" name="parola" id="parola" class="form-control" placeholder="Scrivi qui ..." aria-describedby="parolaHelper">
                 </div>
                 <button type="submit" class="btn btn-primary">Invia</button>
