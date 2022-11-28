@@ -3,15 +3,15 @@
 
 $frase = $_GET['frase'];
 $parola = $_GET['parola'];
-echo $frase .'<br>';
-echo $parola .'<br>';
+//echo $frase .'<br>';
+//echo $parola .'<br>';
 
 
 $frase_esplosa = explode (' ', $frase);
-var_dump($frase_esplosa) .'<br>';
+//var_dump($frase_esplosa) .'<br>';
 
 $parola_censurata = str_ireplace($parola, '***', $frase);
-var_dump($parola_censurata) .'<br>';
+//var_dump($parola_censurata) .'<br>';
 //echo $parola_censurata
 
 
